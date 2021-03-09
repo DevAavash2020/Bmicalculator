@@ -11,8 +11,8 @@ app.get("/", (request,response)=>{
 })
 
 app.post("/index.html",(req,res)=>{
-    const weight = Number(req.body.num1);
-    const height = Number(req.body.num2);
+    const weight = parseFloat(req.body.num1);
+    const height = parseFloat(req.body.num2);
 
     const result = weight/(height*height);
 
